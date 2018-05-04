@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/White">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/White"
+        android:id="@+id/ll">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/White">
+
+            <ImageView
+                android:id="@+id/backbtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:backgroundTint="@color/zxing_transparent"
+                android:src="@drawable/btn_back" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="42dp"
+                android:text="아이디 / 비밀번호 찾기"
+                android:textColor="@color/Black"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/textView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아이디 찾기"
+                android:layout_marginTop="40dp"
+                android:textSize="14dp"
+                android:textColor="@color/grey02"
+                />
+
+            <EditText
+                android:id="@+id/idtx"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="16dp"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textColor="@color/Black"
+                android:hint="가입 시 등록한 이메일"
+                android:textColorHint="@color/grey"
+                android:background="@drawable/edittext_singleline2"
+                />
+
+            <Button
+                android:id="@+id/nextbtn"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/r_box5_press"
+                android:text="@string/next"
+                android:textColor="@color/White"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/edittext_singleline2"></LinearLayout>
+
+            <TextView
+                android:id="@+id/textView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비밀번호 찾기"
+                android:layout_marginTop="40dp"
+                android:textSize="14dp"
+                android:textColor="@color/grey02"/>
+
+            <EditText
+                android:id="@+id/pwdtx"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="16dp"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textColor="@color/Black"
+                android:hint="가입 시 등록한 아이디"
+                android:textColorHint="@color/grey"
+                android:background="@drawable/edittext_singleline2"/>
+
+            <EditText
+                android:id="@+id/emailtx"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="16dp"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textColor="@color/Black"
+                android:hint="가입 시 등록한 이메일"
+                android:textColorHint="@color/grey"
+                android:background="@drawable/edittext_singleline2"
+                />
+
+            <Button
+                android:id="@+id/nextbtn2"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/r_box5_press"
+                android:text="@string/next"
+                android:textColor="@color/White"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v4.widget.ContentLoadingProgressBar
+        android:id="@+id/progress_bar_findmyinfo"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="invisible" />
+
+</RelativeLayout>
+

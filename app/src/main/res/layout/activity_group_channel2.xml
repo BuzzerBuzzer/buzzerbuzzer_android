@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<android.support.design.widget.AppBarLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fitsSystemWindows="true">-->
+
+            <!--<android.support.v7.widget.Toolbar-->
+                <!--android:id="@+id/toolbar_group_channel"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="?attr/actionBarSize"-->
+                <!--android:theme="@style/Toolbar"-->
+                <!--app:popupTheme="@style/Theme.AppCompat.Light">-->
+
+            <!--</android.support.v7.widget.Toolbar>-->
+
+        <!--</android.support.design.widget.AppBarLayout>-->
+
+        <!--<include layout="@layout/fragment_group_chat" />-->
+
+        <FrameLayout
+            android:id="@+id/container_group_channel2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/alert"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        </FrameLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

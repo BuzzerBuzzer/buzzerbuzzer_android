@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Black"
+    android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/user_pic2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center|top"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitStart"
+             />
+
+
+        <!--<android.support.v4.view.ViewPager-->
+            <!--android:id="@+id/view_pager2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="411dp"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_alignParentTop="true">-->
+        <!--</android.support.v4.view.ViewPager>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <ImageView
+            android:id="@+id/backbtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="4dp"
+            android:background="@color/zxing_transparent"
+            android:src="@drawable/btn_exit"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        <ImageView
+            android:id="@+id/roundingbox"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            />
+
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_centerHorizontal="true"
+            android:text="고객센터"
+            android:textSize="30dp"
+            android:textColor="@color/Black"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:layout_alignTop="@+id/roundingbox"/>
+
+        <TextView
+            android:id="@+id/state_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/id"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:textColor="@color/grey02"
+            android:text="문의하세요"
+            android:lines="2"
+            android:textSize="14dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true">
+
+        <Button
+            android:id="@+id/chat_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/largebutton_sub_dim"
+            android:textSize="16dp"
+            android:drawableLeft="@drawable/report2"
+            android:paddingLeft="30dp"
+            android:drawablePadding="-30dp"
+            android:textColor="@color/colorMain"
+            android:text="신고하기" />
+
+            <Button
+                android:id="@+id/call_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/largebutton_sub_dim"
+                android:paddingLeft="30dp"
+                android:drawablePadding="-30dp"
+                android:drawableLeft="@drawable/mail2"
+                android:textSize="16dp"
+                android:textColor="@color/colorMain"
+                android:text="문의하기" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

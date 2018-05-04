@@ -1,0 +1,113 @@
+{
+  "project_info": {
+    "project_number": "1070182737981",
+    "firebase_url": "https://buzzzerbuzzer.firebaseio.com",
+    "project_id": "buzzzerbuzzer",
+    "storage_bucket": "buzzzerbuzzer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070182737981:android:0b09a6dc1e9bbc9f",
+        "android_client_info": {
+          "package_name": "com.movenment.buzzerbuzzer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1070182737981-2t7jbcerh7f94o2ufincoh07l491ocj8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.movenment.buzzerbuzzer",
+            "certificate_hash": "6aff9d96a6c46689e459a7cdd777822bd93a1edd"
+          }
+        },
+        {
+          "client_id": "1070182737981-vnh2acakg8p76hc5ogujpcp7e61bqhn1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABBuKcHv4UDXOrTK4dwZ9MUNVw4Om12ik"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1070182737981-ps6lonl6iccn9tau377lfj4gscnp17qt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.cowithone.buzzer"
+              }
+            },
+            {
+              "client_id": "1070182737981-vnh2acakg8p76hc5ogujpcp7e61bqhn1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070182737981:android:3a0149e169fc6bc1",
+        "android_client_info": {
+          "package_name": "com.movements.and.buzzerbuzzer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1070182737981-qg3d594rk8teo5oamo46odvu2len9gcb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.movements.and.buzzerbuzzer",
+            "certificate_hash": "010e9e12581acd7bf5a9a7f5a5ab1b35a82a616a"
+          }
+        },
+        {
+          "client_id": "1070182737981-vnh2acakg8p76hc5ogujpcp7e61bqhn1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABBuKcHv4UDXOrTK4dwZ9MUNVw4Om12ik"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1070182737981-ps6lonl6iccn9tau377lfj4gscnp17qt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.cowithone.buzzer"
+              }
+            },
+            {
+              "client_id": "1070182737981-vnh2acakg8p76hc5ogujpcp7e61bqhn1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/edittext_singleline2">
+
+            <ImageButton
+                android:id="@+id/backbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+
+                android:backgroundTint="@color/zxing_transparent"
+                android:src="@drawable/top_btn_arw" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/buzzer_buzzer"
+                android:text="@string/buzzer_buzzer"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/confirm2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="@color/zxing_transparent"
+                android:src="@drawable/top_btn_chk"
+
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/email_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:gravity="center_horizontal"
+                android:text="@string/inputphonenum"
+                android:textColor="@color/buzzertext"
+                android:textSize="14dp"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="326dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edittext_singleline2"
+            android:orientation="vertical"
+            android:paddingTop="3dp"
+            android:weightSum="1">
+
+            <Spinner
+                android:id="@+id/phone_cc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:spinnerMode="dialog"
+
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="3dp"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/newpwd"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/edittext_singleline2"
+                android:hint="휴대번호"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/nextbtn3"
+                android:layout_width="59dp"
+                android:layout_height="29dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/r_box1_press"
+                android:text="@string/next"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/newpwd1"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/edittext_singleline2"
+                android:hint="@string/authnum"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/confirmbtn"
+                android:layout_width="59dp"
+                android:layout_height="29dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/r_box1_press"
+                android:text="@string/confirm"
+                android:textColor="@color/white" />
+            <!--android:background="@drawable/r_box1"-->
+
+        </RelativeLayout>
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="3dp"-->
+        <!--android:background="@drawable/edittext_singleline">-->
+
+        <!--</LinearLayout>-->
+
+        <RelativeLayout
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <EditText
+
+                android:id="@+id/id_tx"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/edittext_singleline2"
+                android:hint="아이디 입력하세요"
+                android:singleLine="true"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/dupbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/r_box2_press"
+                android:text="@string/dupbtn"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="3dp"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/pw1_tx"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:background="@drawable/edittext_singleline2"
+                android:hint="@string/profile_pwd"
+                android:password="true"
+                android:singleLine="true"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="3dp"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/pw2_tx"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/edittext_singleline2"
+                android:hint="@string/profile_pwd1"
+                android:password="true"
+                android:singleLine="true"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/text10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/emailreg"
+                android:textColor="@color/email"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/text11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="@string/joininfo"
+                android:textColor="@color/infotext"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/emailtx"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:background="@drawable/edittext_singleline2"
+                android:hint="@string/emailaddress"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/dupbtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/r_box2_press"
+                android:text="@string/dupbtn"
+                android:textColor="@color/white" />
+            <!--android:background="@drawable/r_box2"-->
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_men"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="남자" />
+
+                <RadioButton
+                    android:id="@+id/rb_women"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+
+                    android:text="여자" />
+
+            </RadioGroup>
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/confirm"
+                android:layout_width="155dp"
+                android:layout_height="44dp"
+                android:background="@drawable/r_box3_press"
+                android:text="@string/regiconfirm"
+                android:textColor="@color/white" />
+            <!--android:background="@drawable/r_box3"-->
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

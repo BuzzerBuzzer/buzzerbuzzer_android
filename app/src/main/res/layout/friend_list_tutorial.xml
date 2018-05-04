@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FriendList">
+
+    <FrameLayout
+        android:id="@+id/tuto_close"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:alpha=".5">
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="48dp">
+        <!-- 여기 이후로 절대 건들면 안됨 -->
+
+        <LinearLayout
+            android:id="@+id/allLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:layout_weight="1"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/jido"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/btn_pin_back"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:visibility="invisible"
+                    android:id="@+id/user_pic2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="13dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_launcher" />
+
+
+
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_pic2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:text="실시간"
+                    android:textColor="@color/colorMain"
+                    android:textSize="11dp" />
+
+                <TextView
+
+                    android:id="@+id/smalltv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tx"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="GPS 활성화 해주십시오"
+                    android:textColor="@color/grey02"
+                    android:textSize="11dp"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/tuto1"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:layout_alignStart="@+id/user_pic2"
+                    android:layout_below="@id/smalltv"
+                    android:layout_centerHorizontal="false"
+                    android:layout_marginLeft="-10dp"
+                    android:src="@drawable/img_tutorial_1" />
+
+                <ImageView
+                    android:id="@+id/radiusProgress"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:alpha="0.0"
+                    android:background="@drawable/motion_radius_small"
+                    android:layout_marginTop="13dp"
+                    android:visibility="invisible"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/frList_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="4dp"
+                    android:backgroundTint="@color/zxing_transparent"
+                    android:src="@drawable/btn_setting"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+
+            <!--app:tabGravity="center"-->
+            <android.support.design.widget.TabLayout
+                app:tabIndicatorColor="@null"
+                app:tabMode="scrollable"
+                app:tabTextColor="@color/grey"
+                app:tabPaddingStart="20dp"
+                android:layout_marginTop="25dp"
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:tabTextAppearance="@style/TabTextAppearance"
+                />
+            <ImageView
+                android:id="@+id/tuto2"
+                android:layout_width="120dp"
+                android:layout_height="85dp"
+                android:layout_marginTop="-40dp"
+                android:layout_centerHorizontal="false"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/img_tutorial_2" />
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="1" />
+                <!--android:background="@drawable/edittext_singleline2"-->
+
+
+                <ImageView
+                    android:id="@+id/frAdd_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_addbackground"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:id="@+id/tuto5"
+                    android:layout_width="120dp"
+                    android:layout_height="85dp"
+
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginRight="15dp"
+                    android:baselineAlignBottom="false"
+                    android:src="@drawable/img_tutorial_5" />
+
+                <ImageView
+                    android:id="@+id/frAdd_btn2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginBottom="18dp"
+                    android:layout_gravity="bottom|right"
+                    android:src="@drawable/btn_add"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:id="@+id/tuto3"
+                    android:layout_width="120dp"
+                    android:layout_height="85dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="25dp"
+                    android:baselineAlignBottom="false"
+                    android:src="@drawable/img_tutorial_3" />
+
+                <ImageView
+                    android:id="@+id/tuto4"
+                    android:layout_width="120dp"
+                    android:layout_height="85dp"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginRight="70dp"
+                    android:baselineAlignBottom="false"
+                    android:src="@drawable/img_tutorial_4" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/allLayout_loca"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:orientation="vertical"
+
+            >
+
+
+
+            <ImageView
+                android:id="@+id/frList_btn_1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="4dp"
+                android:backgroundTint="@color/zxing_transparent"
+                android:src="@drawable/btn_setting"
+                android:visibility="invisible"
+                />
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/buttonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/relativeLayout10"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/relativeLayout10"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/btn_noti"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:backgroundTint="@color/zxing_transparent"
+                android:src="@drawable/tab_message_dim" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/btn_buzzer"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/zxing_transparent"
+                android:src="@drawable/tab_buzzer_focus"
+
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/relativeLayout10"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/relativeLayout10"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/btn_noti2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:backgroundTint="@color/zxing_transparent"
+                android:src="@drawable/tab_user_dim" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

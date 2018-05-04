@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/White">
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        app:srcCompat="@drawable/btn_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="유저 ID를 입력해 주세요."
+            android:textSize="14dp"
+            android:textColor="@color/grey02"
+            android:layout_marginTop="68dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+            <!--com.buzzer.cwo.IInAppBilling.ClearEditText-->
+            <EditText
+                android:id="@+id/search_bar1"
+                android:layout_width="match_parent"
+                android:scrollHorizontally="true"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="textVisiblePassword"
+                android:textCursorDrawable="@drawable/custom_cursor_color"
+                android:textSize="30dp"
+                android:textColor="@color/Black"
+                />
+            <ImageView
+                android:id="@+id/search_go_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ico_search_off"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/lin1"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp">-->
+
+    <RelativeLayout
+        android:id="@+id/user_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin1"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        >
+        <ImageView
+            android:id="@+id/user_pic2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="invisible"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/usermessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/text_box_xhdpi_9"
+            android:textColor="@color/grey02"
+            android:textSize="10dp"
+            android:visibility="invisible"
+
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:text="message"
+             />
+        <TextView
+            android:id="@+id/id_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/user_pic2"
+            android:text="id"
+            android:textSize="14dp"
+            android:fontFamily="n"
+            android:visibility="invisible"
+            android:textColor="@color/Black"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lin2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lin1"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:text="친구추천"
+        android:paddingBottom="10dp"
+        android:textColor="@color/Black"
+        android:textSize="14dp"
+        android:background="@drawable/edittext_singleline2"/>
+
+        <!--<ScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview_frrecomand"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                </android.support.v7.widget.RecyclerView>
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+        <!--</ScrollView>-->
+        </LinearLayout>
+
+</RelativeLayout>

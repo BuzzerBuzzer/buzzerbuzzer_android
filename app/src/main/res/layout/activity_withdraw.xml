@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/withll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:id="@+id/settingbtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="@color/zxing_transparent"
+                android:src="@drawable/btn_back" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="버전 정보"
+                android:textColor="@color/Black"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="탈퇴 사유를 알려주세요."
+                android:textColor="@color/grey02"
+                android:textSize="14dp" />
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/reason1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/btn_radio_off"
+                    android:paddingLeft="8dp"
+                    android:text="@string/withdraw3"
+                    android:textColor="@color/grey02"
+                    android:textSize="14dp" />
+
+
+                <RadioButton
+                    android:id="@+id/reason2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:button="@drawable/btn_radio_off"
+                    android:paddingLeft="8dp"
+                    android:text="@string/withdraw4"
+                    android:textColor="@color/grey02"
+                    android:textSize="14dp" />
+
+                <RadioButton
+                    android:id="@+id/reason3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:button="@drawable/btn_radio_off"
+                    android:paddingLeft="8dp"
+                    android:text="@string/withdraw5"
+                    android:textColor="@color/grey02"
+                    android:textSize="14dp" />
+
+                <RadioButton
+                    android:id="@+id/reason4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:button="@drawable/btn_radio_off"
+                    android:paddingLeft="8dp"
+                    android:text="@string/withdraw6"
+                    android:textColor="@color/grey02"
+                    android:textSize="14dp" />
+
+                <RadioButton
+                    android:id="@+id/reason5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:button="@drawable/btn_radio_off"
+                    android:paddingLeft="8dp"
+                    android:text="@string/withdraw7"
+                    android:textColor="@color/grey02"
+                    android:textSize="14dp" />
+            </RadioGroup>
+
+
+            <EditText
+                android:id="@+id/noti6"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/opinionbutton"
+                android:gravity="left"
+                android:hint="기타 의견을 적어 주세요"
+                android:minLines="10"
+                android:overScrollMode="ifContentScrolls"
+                android:padding="10dp"
+                android:textColor="@color/Black"
+                android:textColorHint="@color/grey02"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="삭제된 계정의 모든 정보는 삭제됩니다.\n정말로 탈퇴하시겠습니까?"
+                android:textColor="@color/grey02"
+                android:textSize="14dp" />
+
+
+            <Button
+                android:id="@+id/withdrawbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/largebutton_sub"
+                android:text="@string/withdraw9"
+                android:textColor="@color/colorMain"
+                android:textSize="16dp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

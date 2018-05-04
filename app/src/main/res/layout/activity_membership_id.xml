@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context="com.movements.and.buzzerbuzzer.Membership_id">
+
+    <TextView
+        android:id="@+id/tv_id_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="아이디 / 비밀번호"
+        android:textColor="@color/colorMain"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        app:srcCompat="@drawable/btn_back" />
+
+    <ImageView
+        android:id="@+id/o3"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_below="@+id/tv_id_pw"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/custom_indicator_dimmed" />
+
+    <ImageView
+        android:id="@+id/o2"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_below="@+id/tv_id_pw"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/o3"
+        android:src="@drawable/custom_indicator_focus" />
+
+    <ImageView
+        android:id="@+id/o1"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_below="@+id/tv_id_pw"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/o2"
+        android:src="@drawable/custom_indicator_dimmed" />
+
+    <ImageView
+        android:id="@+id/o4"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_below="@+id/tv_id_pw"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/o3"
+        android:src="@drawable/custom_indicator_dimmed" />
+
+    <ImageView
+        android:id="@+id/o5"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_below="@+id/tv_id_pw"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/o4"
+        android:src="@drawable/custom_indicator_dimmed" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            android:text="아이디를 입력해주세요. (4자 이상)"
+            android:textColor="@color/grey02"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/id_tx"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="textVisiblePassword"
+                android:textColor="@color/Black"
+                android:textCursorDrawable="@drawable/custom_cursor_color"
+                android:textSize="30dp" />
+
+            <ImageView
+                android:id="@+id/delete_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/btn_delete" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/chk_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/largebutton_sub"
+            android:text="중복확인"
+            android:textColor="@color/colorMain"
+            android:textSize="16dp" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/nextbtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/linearLayout2"
+        android:layout_alignEnd="@+id/linearLayout2"
+        app:srcCompat="@drawable/signup_next_dim" />
+
+
+</RelativeLayout>

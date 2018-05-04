@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/White">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:visibility="invisible"
+            >
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                app:srcCompat="@drawable/btn_back" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="17dp"
+                android:textColor="@color/colorMain"
+                android:textSize="12dp"
+                android:text="회원가입" />
+
+            <ImageView
+                android:id="@+id/o3"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:src="@drawable/custom_indicator_dimmed"
+                android:layout_below="@+id/tv1"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                />
+            <ImageView
+                android:id="@+id/o2"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:src="@drawable/custom_indicator_dimmed"
+                android:layout_toLeftOf="@+id/o3"
+                android:layout_below="@+id/tv1"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                />
+            <ImageView
+                android:id="@+id/o1"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:src="@drawable/custom_indicator_focus"
+                android:layout_below="@+id/tv1"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/o2"
+                />
+            <ImageView
+                android:id="@+id/o4"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:src="@drawable/custom_indicator_dimmed"
+                android:layout_below="@+id/tv1"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/o3"
+                android:layout_marginLeft="5dp"
+                />
+            <ImageView
+                android:id="@+id/o5"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:src="@drawable/custom_indicator_dimmed"
+                android:layout_below="@+id/tv1"
+                android:layout_toRightOf="@+id/o4"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edittext_singleline2"
+            android:id="@+id/rel_agree">
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="이용약관"
+                android:textColor="@color/Black"
+                android:layout_alignParentTop="true"
+                android:textSize="30dp"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이용약관 전체동의(선택)"
+                android:textColor="@color/grey02"
+                android:layout_alignBottom="@id/textView21"
+                android:textSize="11dp"
+                android:id="@+id/agree_all"
+                android:buttonTint="@color/colorMain"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/agree1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="서비스 약관(필수)"
+                    android:textColor="@color/grey02"
+                    android:buttonTint="@color/colorMain"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/btn_agree1"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:text="내용보기"
+                    android:textSize="11dp"
+                    android:textColor="@color/grey02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <WebView
+                android:id="@+id/web1"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:visibility="gone"
+                android:background="@color/White">
+            </WebView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/agree2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="개인정보 취급방침(필수)"
+                    android:textColor="@color/grey02"
+                    android:buttonTint="@color/colorMain"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/btn_agree2"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:text="내용보기"
+                    android:textSize="11dp"
+                    android:textColor="@color/grey02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <WebView
+                android:id="@+id/web2"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/White">
+            </WebView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/agree3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="위치기반 서비스 이용약관(필수)"
+                    android:textColor="@color/grey02"
+                    android:buttonTint="@color/colorMain"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/btn_agree3"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:text="내용보기"
+                    android:textSize="11dp"
+                    android:textColor="@color/grey02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <WebView
+                android:id="@+id/web3"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/White">
+            </WebView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/nextbtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        app:srcCompat="@drawable/signup_next_dim" />
+
+</RelativeLayout>

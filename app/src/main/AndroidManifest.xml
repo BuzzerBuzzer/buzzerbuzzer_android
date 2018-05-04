@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.movements.and.buzzerbuzzer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 위치정보활용시 추가 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 위치정보활용시 추가 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- WIFI 상태활용시 추가 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- WIFI 상태활용시 추가 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <!-- phoneread -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <!-- purchase -->
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <!-- auto_sms_auth -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <!-- push -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+
+    <application
+        android:name=".GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".OpeningActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- //바탕화면에서 길게 누른상태에서 나타나는 창에서, 바로가기 항목을 선택하여, -->
+        <!-- //현재 프로그램을 실행시켜면, 위의 activity 태그가 아닌, 밑에 있는 -->
+        <!-- //activity-alias 태그를 통해서 현재 프로그램이 실행됩니다. -->
+
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Firstintro"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FriendList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Myprofile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FriendProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BscProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Userprofile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PopupAddBuzzerId"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Navermap.NMapViewer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Membership"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Allsetting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FindMyinfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfileSetting"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Declare"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Followingprofile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Followprofile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChangePwd"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ChangePhonenum"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Withdraw"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".BuzzerPurchase"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Version"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".policy.MembershipPolicy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".policy.PrivacyPolicy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".policy.GpsPolicy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Buzzer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Buzzerprofile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Popupprofile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Notice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MygpsAble"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MygpsFollowerAble"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Picprofile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Picprofile2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Message"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".News"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".chat.PersonalChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".chatutils.PhotoViewerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".chatutils.MediaPlayerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".chat.GroupChannelActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".chat.InviteMemberActivity"
+            android:label="@string/create_open_channel" />
+        <activity
+            android:name=".chat.MemberListActivity"
+            android:label="@string/member_list" />
+        <activity
+            android:name=".chat.CreateGroupChannelActivity"
+            android:label="@string/create_group_channel" />
+
+        <receiver android:name=".Service.RealtimeGpsBroadReceiver" />
+        <receiver android:name=".Service.SMSReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".Service.LongTimeNoSee">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".Service.TimeReceiver" />
+
+        <!-- [START firebase_service] -->
+        <service android:name=".FCM.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".FCM.MyFirebaseInstanceIDService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- [END firebase_iid_service] -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <meta-data android:name="android.max_aspect" android:value="2.1" />
+
+        <activity android:name=".Agree1" />
+        <activity android:name=".Agree2" />
+        <activity android:name=".Membership_info" />
+        <activity android:name=".Membership_id" />
+        <activity android:name=".Membership_pw" />
+        <activity android:name=".Membership_pw_again" />
+        <activity android:name=".Membership_phone" />
+        <activity android:name=".Membership_email" />
+        <activity android:name=".Membership_gender" />
+        <activity android:name=".Membership_finish" />
+        <activity android:name=".Simple_tutorial" />
+        <activity android:name=".Location_setting" />
+        <activity android:name=".CurrentMessage" />
+        <activity android:name=".Chatprofile" />
+        <activity android:name=".CurrentNickName" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--<ImageView-->
+            <!---->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:src="@null"/>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+
+            >
+
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="45dp"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--&gt;-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/back"-->
+                    <!--android:layout_marginTop="4dp"-->
+                    <!--android:layout_marginLeft="4dp"-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:backgroundTint="@color/zxing_transparent"-->
+                    <!--android:src="@drawable/top_btn_arw_1w"-->
+                    <!--/>-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/btn_thumb"-->
+                    <!--android:layout_marginTop="4dp"-->
+                    <!--android:layout_marginRight="4dp"-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:src="@drawable/btn_thumb"-->
+                    <!--/>-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/saginlist"-->
+                    <!--android:layout_width="16dp"-->
+                    <!--android:layout_height="16dp"-->
+                    <!--android:background="@drawable/profile_radio_count"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_marginTop="28dp"-->
+                    <!--android:layout_marginRight="28dp"-->
+                    <!--android:text="0"-->
+                    <!--android:textColor="@color/White"-->
+                    <!--android:textSize="8dp"/>-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/profilegallery"-->
+                    <!--android:layout_marginTop="11dp"-->
+                    <!--android:layout_marginRight="11dp"-->
+                    <!--android:layout_width="26dp"-->
+                    <!--android:layout_height="26dp"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:src="@drawable/nopic__s_m"-->
+                    <!--/>-->
+
+
+            <!--</RelativeLayout>-->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/topBackground"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:background="@color/Black"
+                            />
+                    </RelativeLayout>
+
+
+                <ImageView
+                    android:id="@+id/profilegallery"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginRight="11dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/nopic__s_m"
+                    android:scaleType="fitXY"
+                    />
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:backgroundTint="@color/zxing_transparent"
+                    android:src="@drawable/top_btn_arw_1w"
+                    />
+
+                <ImageView
+                    android:id="@+id/btn_thumb"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/btn_thumb"
+                    />
+
+                <Button
+                    android:id="@+id/saginlist"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/profile_radio_count"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginRight="28dp"
+                    android:text="0"
+                    android:textColor="@color/White"
+                    android:textSize="8dp"/>
+
+
+                <ImageView
+                    android:id="@+id/camera"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/btn_camera"
+                    android:background="@drawable/camera_background"/>
+                </RelativeLayout>
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <!-- 여기서부터 설정 -->
+
+        <LinearLayout
+            android:id="@+id/bottomBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/White">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="40dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/myprofilesetting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/myprofilesetting"
+                        android:textColor="@color/Black"
+                        android:textSize="30dp"
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/skin"
+                        android:layout_width="48dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/btn_theme_white"
+                        android:visibility="invisible"
+                        />
+                    <TextView
+                        android:id="@+id/skintv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="스킨전환"
+                        android:layout_below="@+id/skin"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_alignParentRight="true"
+                        android:textSize="10dp"
+                        android:textColor="@color/colorMain"
+                        android:visibility="invisible"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!-- 프로필 수정 + 밑줄 -->
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_singleline2"
+                android:orientation="horizontal"
+                >
+            <TextView
+                android:id="@+id/revise"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="프로필 수정"
+                android:textSize="14dp"
+                android:paddingBottom="10dp"
+                android:gravity="bottom"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/Black"
+                />
+            </RelativeLayout>
+
+            <!--<EditText-->
+                <!--android:id="@+id/line1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/custom_line"-->
+                <!--android:enabled="false"-->
+                <!--android:textSize="10dp"/>-->
+
+
+            <!-- 프로필 수정의 속성 값들 -->
+
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_marginRight="20dp"-->
+                <!--&gt;-->
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittext_singleline2"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/nicknametv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="닉네임"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/Black"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="14dp"
+                    />
+
+                <TextView
+                    android:id="@+id/nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="닉네임을 입력해보세요."
+                    android:textColor="@color/grey02"
+                    android:maxLength="13"
+                    android:textSize="14dp" />
+                </RelativeLayout>
+                <!--<EditText-->
+                    <!--android:id="@+id/line2"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/custom_line"-->
+                    <!--android:enabled="false"-->
+                    <!--android:textSize="1dp"-->
+                    <!--android:layout_marginTop="19dp"-->
+                    <!--android:layout_below="@+id/nicknametv"-->
+                    <!--/>-->
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
+
+
+                <TextView
+                    android:id="@+id/messagetv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="상태메세지"
+                    android:textColor="@color/Black"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    />
+
+                <TextView
+                    android:id="@+id/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:gravity="right"
+                    android:text="메세지를 입력해보세요."
+                    android:maxLength="25"
+                    android:textColor="@color/grey02"/>
+
+            </LinearLayout>
+
+
+            <!-- 기본정보-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_singleline2"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/basicinfo"
+                    android:layout_marginTop="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="기본정보"
+                    android:paddingBottom="10dp"
+                    android:gravity="bottom"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/Black"
+                    />
+            </RelativeLayout>
+
+            <!-- 기본정보의 속성 값들 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittext_singleline2"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/emailtv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BuzzerBuzzer 계정"
+                    android:textColor="@color/Black"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="14dp"
+                    />
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textSize="14dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="email"
+                    android:textColor="@color/grey02"/>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittext_singleline2"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/phonetv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="전화번호"
+                    android:textColor="@color/Black"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="14dp"
+                    />
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textSize="14dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="phone number"
+                    android:textColor="@color/grey02"/>
+
+
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
+
+
+                <TextView
+                    android:id="@+id/idtv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BuzzerBuzzer ID"
+                    android:textColor="@color/Black"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    />
+
+                <TextView
+                    android:id="@+id/id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:gravity="right"
+                    android:text="id"
+                    android:textColor="@color/grey02"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/basiclocatv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="내 기본 위치"
+                android:layout_marginLeft="20dp"
+                android:textSize="30dp"
+                android:textColor="@color/Black"
+                />
+
+            <TextView
+                android:id="@+id/locatexttv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/basic_location_text"
+                android:layout_marginLeft="20dp"
+                android:textSize="14dp"
+                android:textColor="@color/Black"
+                />
+
+            <TextView
+                android:id="@+id/currentlocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/setting_ico_pin"
+                android:drawablePadding="5dp"
+                android:text="기본위치"
+                android:textColor="@color/Black"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="10dp"
+                android:text="경기도 수원시 영통구 이의동 443-270"
+                android:textSize="14dp"
+                android:textColor="@color/grey02"/>
+
+            <Button
+                android:id="@+id/locationbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/r_box5_press"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                android:text="위치 설정하기"
+                android:textColor="@color/White"
+                android:textSize="16dp"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

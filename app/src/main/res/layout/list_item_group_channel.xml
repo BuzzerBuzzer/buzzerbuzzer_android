@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true">
+
+
+    <ImageView
+        android:id="@+id/image_group_channel_list_cover"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        android:src="@color/white"/>
+
+    <LinearLayout
+        android:id="@+id/container_group_channel_list_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image_group_channel_list_cover"
+        android:layout_alignTop="@id/image_group_channel_list_cover"
+        android:layout_marginLeft="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/text_group_channel_list_topic"
+            android:textSize="14dp"
+            android:textColor="@color/Black"
+            android:maxWidth="160dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/text_group_channel_list_member_count"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:minWidth="16dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="12sp"-->
+            <!--android:layout_marginLeft="8dp"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:background="@drawable/group_channel_list_member_background"-->
+            <!--android:paddingLeft="4dp"-->
+            <!--android:paddingRight="4dp"-->
+            <!--android:gravity="center"-->
+            <!--android:maxLines="1"-->
+            <!--android:text="3" />-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_group_channel_list_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/container_group_channel_list_topic"
+        android:layout_alignLeft="@id/container_group_channel_list_topic"
+        android:orientation="horizontal">
+
+
+        <include layout="@layout/layout_typing_indicator"
+            android:id="@+id/container_group_channel_list_typing_indicator"
+            android:layout_width="32dp"
+            android:layout_marginTop="4dp"
+            android:layout_height="16dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/text_group_channel_list_message"
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textSize="12dp"
+            android:textColor="@color/grey02"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/text_group_channel_list_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/container_group_channel_list_topic"
+        android:maxLines="1"
+        android:text=""
+        android:textSize="10dp"
+        android:textColor="@color/grey04"/>
+
+    <TextView
+        android:id="@+id/text_group_channel_list_unread_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/text_group_channel_list_date"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/White"
+        android:background="@drawable/group_channel_list_unread_background"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:maxLines="1"
+        android:text="" />
+
+
+
+</RelativeLayout>

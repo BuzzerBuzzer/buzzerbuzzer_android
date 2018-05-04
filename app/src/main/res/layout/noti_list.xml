@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?><!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:orientation="vertical"--><!--android:weightSum="1"--><!--tools:context=".FriendList">-->
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <!--<ImageView-->
+            <!--android:id="@+id/tab_new_chat"-->
+            <!--android:layout_width="5dp"-->
+            <!--android:layout_height="5dp"-->
+            <!--android:layout_weight="0"-->
+            <!--android:translationX="150dp"-->
+            <!--android:translationY="20dp"-->
+            <!--android:visibility="gone"-->
+            <!--app:srcCompat="@drawable/tab_new_chat" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/tab_new_news"-->
+            <!--android:layout_width="5dp"-->
+            <!--android:layout_height="5dp"-->
+            <!--android:layout_weight="0"-->
+            <!--android:translationX="340dp"-->
+            <!--android:translationY="15dp"-->
+            <!--app:srcCompat="@drawable/tab_new_news" />-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/relativeLayout4"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_alignParentTop="true">-->
+            <!--<ImageButton-->
+            <!--android:id="@+id/frAdd_btn"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:backgroundTint="@color/tabcolor"-->
+            <!--android:src="@drawable/friendsadd" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/textView21"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:text="Buzzer Buzzer"-->
+                <!--android:textColor="@color/buzzertext"-->
+                <!--android:textSize="15dp" />-->
+
+            <!--<ImageButton-->
+            <!--android:id="@+id/frList_btn"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:background="@color/tabcolor"-->
+            <!--android:src="@drawable/myprofile"-->
+            <!--android:textColor="@color/white" />-->
+
+        <!--</RelativeLayout>-->
+
+        <!--<android.support.design.widget.TabLayout-->
+        <!--android:id="@+id/tabLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/tabcolor"-->
+
+        <!--android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />-->
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/AppTabLayout"
+            android:background="@drawable/custom_tab_background_dim">
+
+        </TabWidget>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                />
+        </FrameLayout>
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:layout_weight="0.20"-->
+        <!--android:background="@color/menu_n_singer">-->
+
+
+        <!--<ImageButton-->
+        <!--android:id="@+id/btn_fr"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="@color/munubtn"-->
+        <!--android:src="@drawable/layer_57"-->
+
+        <!--android:textColor="@color/white" />-->
+
+
+        <!--&lt;!&ndash;<ImageButton&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/btn_find"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_margin="5dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:background="@color/munubtn"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:src="@drawable/layer_56"&ndash;&gt;-->
+
+        <!--&lt;!&ndash;android:textColor="@color/white" />&ndash;&gt;-->
+
+
+        <!--<ImageButton-->
+        <!--android:id="@+id/btn_buzzer"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="@color/munubtn"-->
+
+        <!--android:src="@drawable/vector_smart_object"-->
+
+        <!--android:textColor="@color/white" />-->
+
+
+        <!--<ImageButton-->
+        <!--android:id="@+id/btn_noti"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="@color/munubtn"-->
+        <!--android:src="@drawable/layer_58"-->
+        <!--android:textColor="@color/white" />-->
+
+
+        <!--<ImageButton-->
+        <!--android:id="@+id/btn_place"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="@color/munubtn"-->
+        <!--android:src="@drawable/place"-->
+        <!--android:textColor="@color/white" />-->
+        <!--</LinearLayout>-->
+        <RelativeLayout
+            android:id="@+id/buttonlayout"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/edittext_singleline"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/relativeLayout10"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/relativeLayout10"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/btn_noti"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="@color/zxing_transparent"
+                    android:src="@drawable/tab_message_focus" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/buzzer"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/zxing_transparent"
+                    android:src="@drawable/tab_buzzer_focus"
+
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/relativeLayout10"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/relativeLayout10"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/btn_noti2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/zxing_transparent"
+                    android:src="@drawable/tab_user_dim" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</TabHost>

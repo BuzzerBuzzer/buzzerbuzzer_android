@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:design="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White">
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        >
+
+        <ImageView
+            android:id="@+id/setting"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            app:srcCompat="@drawable/btn_setting" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/centerBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topBar"
+        android:layout_above="@+id/bottomBar"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="나의 위치를"
+            android:textSize="30dp"
+            android:textColor="@color/Black"/>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"
+            android:layout_marginTop="42dp"
+            android:text="실시간"
+            android:textSize="29dp"
+            style="@style/ThemeSpinner"
+            />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="표시합니다."
+            android:textSize="25dp"
+            android:textColor="@color/Black"
+            android:layout_marginRight="100dp"
+            android:layout_alignBaseline="@+id/spinner"
+            android:layout_alignBottom="@+id/spinner"
+            android:layout_toEndOf="@+id/spinner"
+            android:layout_marginStart="19dp" />
+
+        <TextView
+            android:id="@+id/smalltv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ico_pin"
+            android:paddingRight="5dp"
+            android:text="설정 위치를 표시합니다."/>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:maxWidth="80dp"
+            android:minWidth="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:src="@drawable/signup_next_dim"/>
+
+        <ImageView
+            android:id="@+id/radiusProgress"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:alpha="100"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/motion_radius"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        >
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:menu="@menu/bottombar"
+            android:layout_centerVertical="true"
+            android:background="@drawable/custom_bottombar">
+        </android.support.design.widget.BottomNavigationView>
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="8dp"-->
+        <!--android:layout_height="13dp"-->
+        <!--android:layout_margin="20dp"-->
+        <!--tools:layout_editor_absoluteY="8dp"-->
+        <!--tools:layout_editor_absoluteX="19dp">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="140dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:text="똥멍청이"-->
+            <!--android:textSize="30dp"/>-->
+
+
+    <!--</LinearLayout>-->
+
+
+
+
+<!--</RelativeLayout>-->
